@@ -1,0 +1,73 @@
+= jIMDB
+
+Copyright (c) 2010 Mridang Agarwalla
+
+A Java interface to IMDB.com
+
+IMDB is great resource for infomation on tv shows and movies. Unfortunely, it
+does not provide an API to access it's data. By using jIMDB in your Java program
+you can access IMDB.
+
+Please keep in mind that this is a basic interface to IMDB and doesn't support
+all the metadata fields found. It simply supports the most widely used fields.
+
+== Usage
+
+Here's a snippet which is used for getting the movie information for a movie
+
+  JIMDB mov0 = new JIMDB();
+  mov0.getMovieByID("tt0238380");
+  System.out.println(mov0.getTitle());
+  System.out.println(mov0.getYear());
+  System.out.println(mov0.getRating());
+  System.out.println(mov0.getVotes());
+  System.out.println(mov0.getGenre());
+  System.out.println(mov0.getRuntime());
+  System.out.println(mov0.getCinemaDate("Belgium"));
+
+Here's a snippet which is used for getting the movie information for a movie
+
+  JIMDB mov0 = new JIMDB();
+  mov0.getTVShowByID("tt0491738");
+  System.out.println(mov0.getTitle());
+  System.out.println(mov0.getYear());
+  System.out.println(mov0.getRating());
+  System.out.println(mov0.getVotes());
+  System.out.println(mov0.getGenre());
+  System.out.println(mov0.getRuntime());
+  System.out.println(mov0.getEpisode(3, 3));
+
+== Dependencies
+
+* jSoup 1.4.1
+
+== Configuration
+
+None
+
+== TODO
+
+This is beta software. Several things are on the todo list. if you'd like to see
+a new feature, please help by contributing.
+
+== Contributing
+
+Pull requests will be ignored if they don't follow the Git convention of
+a 50 character or less subject and optional paragraphs wrapped to 72
+characters.
+
+If I provide you with feedback on your pull request, generally you should
+squash your changes into the previous commit when submitting a second request.
+
+== License
+
+This program is released under the GNU GPL.
+
+== Contact
+
+Feel free to request new features or provide bug reports.
+You can find my email address here.
+
+== Disclaimer
+
+No warranties, expressed or implied.
