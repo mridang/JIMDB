@@ -206,7 +206,7 @@ public class JIMDB {
             Document doc;
 
             httpResponse = new StringBuilder();
-            httpURL = new URL("http://www.imdb.com/title/" + sID);
+            httpURL = new URL("http://akas.imdb.com/title/" + sID);
             httpFetcher = httpURL.openConnection();
             httpFetcher.setRequestProperty("User-Agent", USER_AGENT);
             httpStream = new InputStreamReader(httpFetcher.getInputStream());
@@ -252,7 +252,7 @@ public class JIMDB {
             Document doc;
 
             httpResponse = new StringBuilder();
-            httpURL = new URL("http://www.imdb.com/title/" + sID + "/episodes");
+            httpURL = new URL("http://akas.imdb.com/title/" + sID + "/episodes");
             httpFetcher = httpURL.openConnection();
             httpFetcher.setRequestProperty("User-Agent", USER_AGENT);
             httpStream = new InputStreamReader(httpFetcher.getInputStream());
@@ -291,7 +291,7 @@ public class JIMDB {
             Document doc;
 
             httpResponse = new StringBuilder();
-            httpURL = new URL("http://www.imdb.com/title/" + sID + "/releaseinfo");
+            httpURL = new URL("http://akas.imdb.com/title/" + sID + "/releaseinfo");
             httpFetcher = httpURL.openConnection();
             httpFetcher.setRequestProperty("User-Agent", USER_AGENT);
             httpStream = new InputStreamReader(httpFetcher.getInputStream());
